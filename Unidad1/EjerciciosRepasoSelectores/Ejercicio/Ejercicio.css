@@ -1,0 +1,60 @@
+*{
+    color: darkred;
+}
+h1{
+    color: darkblue;
+}
+h2, h3{
+    color: darkslateblue;
+}
+h1 , h2 , h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+}
+nav > div a{
+    text-decoration: none;
+}
+main {
+    font-size: 30px;
+    line-height: 1.5;
+}
+section {
+    font-size: 20px;
+}
+section p {
+    font-size: 15px;
+}
+section > h2 , p  {
+    font-size: 24px;
+}
+header > h1 , main > h2 {
+    text-align: center;
+}
+main + section {
+    border: 2px dotted black;
+}
+main ~ * {
+    background-color: grey;
+}
+h2 + article{
+    background-color: bisque;
+    width: 200px;
+ }
+img [alt] {
+    width: 200px;
+}
+img[alt^="nom"] {
+    border-radius: 50%;
+}
+img[scr*="2"] {
+    width: 300px;
+}
+img[alt$="o"] {
+    border: ;
+}
+img[alt~="mono"] {
+    outline: 10px solid black;
+    border: 2px solid red
+}
+a[href="contacto.html"] {
+    text
+}
