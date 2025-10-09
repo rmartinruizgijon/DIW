@@ -49,12 +49,9 @@ img[scr*="2"] {
     width: 300px;
 }
 img[alt$="o"] {
-    border: ;
+    border: 5px dashed blue;
 }
 img[alt~="mono"] {
     outline: 10px solid black;
     border: 2px solid red
-}
-a[href="contacto.html"] {
-    text
 }
