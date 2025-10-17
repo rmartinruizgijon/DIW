@@ -1,0 +1,19 @@
+body {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 2rem;
+}
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+.manifesto {
+    background-color: rgba(20, 20, 20, 0.8);
+    color: rgb(200, 200, 200);
+    margin: 2rem;
+    padding: 4rem;
+}

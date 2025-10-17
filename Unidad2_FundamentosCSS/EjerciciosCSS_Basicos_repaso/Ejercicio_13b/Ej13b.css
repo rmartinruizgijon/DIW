@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+body{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-position: center center; /*vertical horizontal */
+}
+article{
+    background-color: rgba(20,20, 20, 0.7);
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    
+}
+main{
+    font-size: 20px;
+    font-style: italic;
+    background-image: url("html5.png"), url("css3.png"), url("js.png");
+    background-position: left, center, right;
+    background-repeat: no-repeat;
+}
+
+main{
+    background: url("html5.png") left no-repeat,
+                url("css3.png") center no-repeat,
+                url("js.png") right no-repeat
+}
+.manifesto{
+    background-color: rgba(20,20, 20, 0.7);
+    color: rgb(200, 200, 200);
+}

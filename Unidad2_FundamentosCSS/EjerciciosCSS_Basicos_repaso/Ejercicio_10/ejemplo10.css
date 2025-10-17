@@ -1,0 +1,26 @@
+.divespecial{
+    border: solid 1px red;   
+    background-color: gainsboro;
+    width: 200px;
+     
+}
+.pespecial{
+    border: solid 1px lightgreen;
+    border-style: dashed;
+    width: 300px;
+    padding: 10px;
+}
+.otroespecial{
+    margin: 0 auto; margin-bottom: 70px;
+    border: solid 1px gray;
+    border-style: dotted;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+span{
+    color: white;
+    border: solid 1px black;
+    background-color: gray;
+    padding-inline: 20px;
+}
