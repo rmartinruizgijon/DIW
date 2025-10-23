@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: sans-serif;
+}
+/* titular h1 con posicion relative */
+h1 {
+  position: relative;
+  left: 50px;
+  top: 10;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  width: 80%;
+}
+/* menu superior */
+.sticky-menu {
+  background-color: darkslategray;
+  height: 50px;
+  position: sticky;
+  top: 0px;
+}
+/* enlaces menu superior y footer */
+.menu-element {
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+  width: 150px;
+}
+.menu-element a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.menu-element a:hover {
+  text-decoration: underline;
+}
+
+.sticky-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  z-index: 3;
+}
+
+/* seccion banner */
+
+.banner {
+  background-color: lightblue;
+  height: 200px;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+}
+.logo1 {
+  background-color: darkolivegreen;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 50px;
+}
+.logo2 {
+  background-color: darkorange;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 100px;
+}
+.content {
+  background-color: darksalmon;
+  width: 80%;
+  margin: 20px auto;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered {
+  background-color: lightgreen;
+  height: 150px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: darkslategray;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 3;
+}
