@@ -13,7 +13,6 @@ h1 {
   top: 10;
   margin-bottom: 20px;
   font-size: 3rem;
-  width: 80%;
 }
 /* menu superior */
 .sticky-menu {
@@ -57,11 +56,11 @@ h1 {
 .logo {
   width: 120px;
   height: 120px;
+  position: absolute;
 }
 .logo1 {
   background-color: darkolivegreen;
   display: block;
-  position: absolute;
   z-index: 2;
   top: 50px;
   left: 50px;
@@ -69,7 +68,6 @@ h1 {
 .logo2 {
   background-color: darkorange;
   display: block;
-  position: absolute;
   z-index: 1;
   top: 30px;
   left: 100px;

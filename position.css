@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  border: 2px dashed black;
+  margin: 50px;
+  height: 650px;
+  width: 750px;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+
+  line-height: 130px;
+  text-align: center;
+}
+
+.first {
+  background-color: firebrick;
+  /* el elemento se coloca segun el flujo html e ignora top bottom left right y z-index */
+  position: static;
+  left: 300px;
+}
+.second {
+  background-color: limegreen;
+  /* relative activa top bottom lef right y z-index */
+  /* el desplazamiento se realiza desde la posicion que le corresponde con respecto al html */
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.third {
+  background-color: dodgerblue;
+  /* absolute activa top bottom.. */
+  /* el elemento sale del flujo html */
+  /* el desplazamiento se realiza desde el borde de la ventana del navegador o desde el primer ascendiente que tenga  */
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+.fourth {
+  background-color: goldenrod;
+  /* fixed activa top bottom left right z-index */
+  /* fija al elemento en pantalla e ignora  el posible scroll; lo saca del flujo html */
+  /* el desplazamiento se realiza con respecto al borde de la ventana del navegador simpre */
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+.fifth{
+    background-color: violet;
+    /* sticky siempre acompañado de la posicion top y cuando el scroll pasa por sticky lo mueve como fixed hasta que vuelve hacia arriba */
+
+    position: sticky;
+    top: 0px;
+
+}
