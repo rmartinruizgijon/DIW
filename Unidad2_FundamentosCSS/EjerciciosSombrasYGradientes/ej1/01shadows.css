@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title {
+  text-shadow: 2px 2px 1px #8d8d8d;
+}
+
+div{
+    margin: 30px;
+    padding: 20px;
+}
+
+.shady{
+    box-shadow: 4px 4px 5px #56ff5e;
+}
+.shady2{
+    box-shadow: -4px -4px 0px #ff2828;
+}
+.shady3{
+    box-shadow: 5px 0px 0px #5659ff;
+}
+.shady4{
+    font-size: 30px;
+    width: 120px;
+    box-shadow: 5px 5px 0px #ff58db;
+    
+}
