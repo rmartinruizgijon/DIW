@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprobador super CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlaza tu hoja de estilos comentada aquí -->
+  <link rel="stylesheet" href="estilosEjemplo.css">
+</head>
+<body>
+  <header>
+    <h1>Comprobador de todas las propiedades CSS importantes</h1>
+    <nav>
+      <ul>
+        <li><a href="#flex">Flexbox</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+        <li><a href="#tabla">Tabla</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- FLEX DEMO -->
+    <section id="flex">
+      <h2>Flexbox completo</h2>
+      <div class="flex-demo">
+        <div style="flex:2 2 100px; order:2; align-self:flex-end;">Flex 1<br>flex:2 2 100px; order:2; align-self:flex-end;</div>
+        <div style="flex:1 1 140px; order:1; align-self:center;">Flex 2<br>flex:1 1 140px; order:1; align-self:center;</div>
+        <div style="flex:1 3 200px; order:0; align-self:flex-start;">Flex 3<br>flex:1 3 200px; order:0; align-self:flex-start;</div>
+      </div>
+      <p>
+        Modifica valores de <strong>flex-grow</strong>, <strong>flex-shrink</strong>, <strong>flex-basis</strong>, <strong>order</strong> y <strong>align-self</strong> aquí.<br>
+        <code>flex: grow shrink basis;</code>
+      </p>
+    </section>
+    <!-- GRID DEMO -->
+    <section id="grid">
+      <h2>Grid CSS</h2>
+      <div class="grid-demo" style="grid-template-columns:1fr 2fr;">
+        <div style="grid-column: 1; grid-row: 1 / span 2;">Grid 1<br>grid-column:1;<br>grid-row:1/span2;</div>
+        <div style="grid-column: 2;">Grid 2</div>
+        <div>Grid 3</div>
+        <div style="grid-column: span 2;">Grid 4<br>grid-column:span2;</div>
+      </div>
+      <p>
+        Prueba propiedades: <code>grid-template, grid-column, grid-row, gap, align-self, justify-self</code>.<br>
+        Reduce la ventana para ver el responsive.
+      </p>
+    </section>
+    <!-- FORM DEMO -->
+    <section id="formulario">
+      <h2>Formulario accesible</h2>
+      <form>
+        <label for="nombre">Nombre*</label>
+        <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Escribe tu nombre">
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required aria-required="true" placeholder="a@b.com">
+
+        <label for="comentario">Mensaje</label>
+        <textarea id="comentario" name="comentario"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- TABLE DEMO -->
+    <section id="tabla">
+      <h2>Tabla de prueba</h2>
+      <table>
+        <caption>Tabla accesible</caption>
+        <thead>
+          <tr><th>Día</th><th>Hora</th><th>Actividad</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunes</td><td>09:00</td><td>Flexbox</td></tr>
+          <tr><td>Martes</td><td>10:00</td><td>Grid</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- MEDIA DEMO -->
+    <section id="multimedia">
+      <h2>Imagen y Vídeo</h2>
+      <img src="https://placehold.co/300x180/png" alt="imagen de prueba">
+      <video controls width="320">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Tu navegador no soporta el vídeo.
+      </video>
+    </section>
+  </main>
+  <footer>
+    &copy; Test de propiedades CSS para examen DIW
+  </footer>
+</body>
+</html>

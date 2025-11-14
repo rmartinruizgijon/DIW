@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedorPagina {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin: 30px;
+  background-color: blue;
+  padding: 30px;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.galeriaItem {
+  height: 350px;
+  flex: 1 1 350px;
+}
+
+.contenedorGaleria,
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
