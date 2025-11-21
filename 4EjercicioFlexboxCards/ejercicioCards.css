@@ -2,10 +2,14 @@
   --card-min: 250px;
   --card-max: 350px;
   --radius: 20px;
-  /* --shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.644) ; */
   --border: 1px solid lightgrey;
+  --azul-oscuro: #262938;
+  --azul-intermedio: #4e6bff;
+  --texto-gris: #777;
+  --btn-oscuro: #262938;
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,27 +17,134 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  /* parte superior blanca */
 }
 
+/* CONTENEDOR HERO (las cards) */
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;   /* centra en horizontal */
+  align-items: center;       /* centra en vertical */
   gap: 30px;
   padding: 3rem 1rem;
 }
 
+/* Fondo ocupa solo la mitad inferior */
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;               /* mitad inferior exacta */
+  background-color: var(--azul-oscuro);
+  z-index: 0;
+}
+
+
+/* Todo lo que hay dentro de .hero va por encima del fondo */
 .hero-card {
+  position: relative;
+  z-index: 1;
   background-color: white;
   min-width: var(--card-min);
   max-width: var(--card-max);
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   border-radius: var(--radius);
   border: var(--border);
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 0.7rem;
+}
+
+/* CARD INTERMEDIA DESTACADA */
+.cardIntermedio {
+  background-color: var(--azul-intermedio);
+  color: white;
+  border: none;
+}
+
+/* TIPOGRAFÍA */
+.cardTitulo {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.cardPrecio {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cardUsuario {
+  font-size: 0.9rem;
+  color: var(--texto-gris);
+}
+
+.cardIntermedio .cardUsuario {
+  color: #e9ecff;
+}
+
+/* LISTA DE CARACTERÍSTICAS */
+.hero_caracterisicas {
+  list-style: none;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--texto-gris);
+}
+
+.cardIntermedio .hero_caracterisicas {
+  color: #e9ecff;
+}
+
+/* BOTÓN */
+.heroButton {
+  margin-top: auto;
+  align-self: center;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--btn-oscuro);
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.cardIntermedio .heroButton {
+  background-color: white;
+  color: var(--azul-intermedio);
+}
+
+/* ---------- BREAKPOINT 992px ---------- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-card {
+    width: 80vw;
+  }
+}
+
+/* ---------- BREAKPOINT 576px ---------- */
+@media (max-width: 576px) {
+  .hero {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    border-radius: 0;
+  }
 }
