@@ -1,0 +1,50 @@
+:root {
+  --field-min: ;
+  --field-max: 100vh;
+  --border: solid lightgray 2px;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(39, 182, 218, 0.25),
+      rgba(206, 22, 160, 0.25)
+    ),
+    url("img/montaña.jpg");
+  background-image: no-repeat;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--field-max);
+}
+
+.contact__form {
+  border: var(--border);
+  background-color: white;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 1.5rem;
+  padding: 4rem;
+}
+
+.contact__legend {
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+}
+
+.contact__field {
+  font-size: 20px;
+}
