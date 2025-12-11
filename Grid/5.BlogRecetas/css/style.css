@@ -1,4 +1,19 @@
-html {
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    /* esto es igual a 10px, se usa para despues dar font size 3.2 rem por ejemplo y que los calculos salgan mejor, esto hace que 1rem = 10px */
+}
+
+/* importar estilos */
+/* @font-face {
+    font-family: 'Raylway';
+    src: url('../fonts/');
+} */
+
+/* Esto es igual que el * de arriba */
+/* html {
     box-sizing: border-box;
 }
 
@@ -6,7 +21,17 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+} */
+
+/* estilos generales */
+.container {
+    margin: 20px auto;
+    /* margin-inline: 20px auto; */
+    width: 100%;
+    max-width: 1200px;
+
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,14 +42,18 @@ h1 {
     font-weight: 900;
 }
 
+/* hacer las imagenes responsives */
 img {
     max-width: 100%;
+    display: block;
 }
 
+/* HEADER */
 .header {
     padding-top: 3rem;
 }
 
+/* BARRA DE NAVEGACION */
 .navigation {
     background-color: black;
     margin: 3rem 0;
@@ -42,6 +71,14 @@ img {
     background-color: #c9c84a;
     color: black;
 }
+
+/* grip para header y footer */
+.navigation .container,
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 
 .hero__img {
     width: 100%;
@@ -106,4 +143,45 @@ blockquote {
     margin: 3rem 0 0 0;
     padding: 1rem;
     text-align: center;
+}
+
+
+/* media querie */
+/* aplica grid a main-content solo a partit de 768px */
+@media screen and (min-width: 768px) {
+
+    /* definicion de la cuadrícual grid */
+    .main-content {
+        display: grid;
+        /* esto mide minimo 100px y maximo lo que mida la imagen mas ancha de la columna izquierda y derecha */
+        grid-template-columns: minmax(100px, max-content) auto minmax(100px, max-content);
+        grid-template-rows: repeat(4, auto);
+        /* auto da la altura de lo que contenga dentro */
+    }
+
+
+    /* colocacion de los elementos grid en la cuadrícula de main-content */
+    .main-content__title {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .main-content__info{
+        grid-row: 2/3 ;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-content__img1{
+        grid-column: / ;
+        grid-row: / ;
+    }
+    .main-content__img2{
+        grid-column: / ;
+        grid-row: / ;
+    }
+
 }
