@@ -1,0 +1,221 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LAYOUT GENERAL */
+:root {
+    --color-blue: #2d0080;
+    --color-purple: #8b97ff;
+    --color-accent: #d5f132;
+    --color-light: #fafafa;
+
+    --font-main: "Staatliches", sans-serif;
+    --font-body: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-blue);
+    font-family: var(--font-body);
+}
+
+main {
+    flex: 1;
+}
+
+/* BRAND + HEADER */
+.brand {
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.18em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.header {
+    background: var(--color-purple);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav__link--active {
+    color: var(--color-accent);
+}
+
+/* MAIN WRAPPER */
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.section-title {
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* 1. Layout principal (Grid áreas simples) */
+.layout__grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.layout__sidebar {
+    background: var(--color-light);
+    border: 4px solid var(--color-purple);
+    padding: 1rem;
+}
+
+.layout__content {
+    background: #fff;
+    border: 4px solid var(--color-purple);
+    padding: 1rem;
+}
+
+.layout__extra {
+    grid-column: 1 / -1;
+    /* ocupa toda la fila */
+    background: var(--color-light);
+    border: 4px dashed var(--color-purple);
+    padding: 1rem;
+}
+
+/* 2. Cards auto-fit (Grid responsivo) */
+.cards__grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+    background: #fff;
+    border: 4px solid var(--color-purple);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+/* 3. Barra de características (Flex) */
+.features__row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: var(--color-light);
+    border: 4px solid var(--color-purple);
+    flex: 1 1 200px;
+    /* base 200px, crece y encoge */
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature__title {
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+/* 4. Productos (Grid + Flex dentro) */
+.products__grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product {
+    display: flex;
+    gap: 1rem;
+    background: #fff;
+    border: 4px solid var(--color-purple);
+    padding: 1rem;
+}
+
+.product__image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.product__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product__name {
+    font-family: var(--font-main);
+    margin-bottom: 0.25rem;
+}
+
+.product__price {
+    font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--color-purple);
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    font-family: var(--font-main);
+    letter-spacing: 0.12em;
+}
+
+/* RESPONSIVE PEQUEÑO */
+@media (max-width: 768px) {
+    .layout__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features__row {
+        justify-content: center;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

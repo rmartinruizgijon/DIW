@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resumen Grid & Flex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Staatliches&family=Noto+Sans+TC:wght@400;700&display=swap">
+    <link rel="stylesheet" href="resumen.css">
+</head>
+
+<body class="page">
+
+    <div class="brand">RESUMEN<br>GRID & FLEX</div>
+
+    <header class="header">
+        <nav class="header__nav nav">
+            <a href="#" class="nav__link nav__link--active">INICIO</a>
+            <a href="#" class="nav__link">GRID</a>
+            <a href="#" class="nav__link">FLEX</a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- 1. Layout principal con Grid -->
+        <section class="layout">
+            <h2 class="section-title">1. Layout principal (Grid áreas)</h2>
+            <div class="layout__grid">
+                <aside class="layout__sidebar">Sidebar</aside>
+                <article class="layout__content">Contenido principal</article>
+                <div class="layout__extra">Extra</div>
+            </div>
+        </section>
+
+        <!-- 2. Cards auto-fit con Grid -->
+        <section class="cards">
+            <h2 class="section-title">2. Cards auto-fit (Grid)</h2>
+            <div class="cards__grid">
+                <article class="card">Card 1</article>
+                <article class="card">Card 2</article>
+                <article class="card">Card 3</article>
+                <article class="card">Card 4</article>
+                <article class="card">Card 5</article>
+            </div>
+        </section>
+
+        <!-- 3. Barra de características con Flex -->
+        <section class="features">
+            <h2 class="section-title">3. Barra de características (Flex)</h2>
+            <div class="features__row">
+                <div class="feature">
+                    <h3 class="feature__title">ENVÍO</h3>
+                    <p class="feature__text">Rápido</p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title">PRECIO</h3>
+                    <p class="feature__text">Justo</p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title">CALIDAD</h3>
+                    <p class="feature__text">Alta</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Cards horizontales con Flex dentro de Grid -->
+        <section class="products">
+            <h2 class="section-title">4. Productos (Grid + Flex dentro)</h2>
+            <div class="products__grid">
+                <article class="product">
+                    <img class="product__image" src="1.jpg" alt="Prod 1">
+                    <div class="product__body">
+                        <h3 class="product__name">Producto 1</h3>
+                        <p class="product__price">19,99 €</p>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img class="product__image" src="2.jpg" alt="Prod 2">
+                    <div class="product__body">
+                        <h3 class="product__name">Producto 2</h3>
+                        <p class="product__price">21,99 €</p>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img class="product__image" src="3.jpg" alt="Prod 3">
+                    <div class="product__body">
+                        <h3 class="product__name">Producto 3</h3>
+                        <p class="product__price">23,99 €</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">FOOTER PEGADO ABAJO</footer>
+</body>
+
+</html>

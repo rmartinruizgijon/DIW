@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FrontEnd Store - Productos</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Staatliches&family=Noto+Sans+TC:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="estilosTienda.css">
+</head>
+
+<body class="page">
+
+    <div class="brand">
+        FRONTEND<br>STORE
+    </div>
+
+    <header class="header">
+        <nav class="header__nav nav">
+            <a href="tienda.html" class="nav__link">TIENDA</a>
+            <a href="nosotros.html" class="nav__link nav__link--active">NOSOTROS</a>
+            <i class="fas fa-shopping-cart nav__icon"></i>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <h1 class="product-page__title">REACT JS</h1>
+
+        <section class="product-page__grid">
+            <figure class="product-page__image-wrapper">
+                <img class="product-page__image" src="1.jpg" alt="Camiseta React JS">
+            </figure>
+
+            <div class="product-page__content">
+                <p class="product-page__description">
+                    Maecenas consectetur ultricies mi vel venenatis...
+                </p>
+
+                <form class="product-page__form">
+                    <select class="product-page__select">
+                        <option>-- Seleccionar --</option>
+                    </select>
+
+                    <input class="product-page__qty" type="number" min="1" placeholder="Cantidad">
+
+                    <button class="product-page__btn" type="submit">
+                        AGREGAR AL CARRITO
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        FRONTEND STORE - TODOS LOS DERECHOS RESERVADOS © 2025
+    </footer>
+</body>
+
+</html>
