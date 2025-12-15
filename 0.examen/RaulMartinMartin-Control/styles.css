@@ -1,0 +1,394 @@
+/* Propiedades generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62, 5%;
+    /* esto es igual a 10px */
+}
+
+/* Importar los estilos */
+@font-face {
+    font-family: 'Raleway';
+    src: url(assets/Raleway-Regular.ttf);
+    font-family: 'Roboto';
+    src: url(assets/Roboto-Regular.ttf);
+    font-family: 'RalewayBold';
+    src: url(assets/Raleway-Bold.ttf);
+    font-family: 'RobotoBold';
+    src: url(assets/Roboto-Bold.ttf);
+}
+
+
+
+/* Variables para usar luego*/
+:root {
+    --color-cafeOscuro: #5e311e;
+    --color-cafeClaro: #ebe7de;
+    --color-hoverBarra: #c39c63;
+    --color-gris: #eceeef;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+
+    --font-size-h1: 4rem;
+    --font-size-h2: 3.6rem;
+    --font-size-h3: 3.2rem;
+    --font-size-p: 1.6rem;
+
+    --line-height-p: 2px;
+    --line-height-titulares: 1.5px;
+
+    --font-main: "";
+    --font-body: "";
+}
+
+/* el cuerpo o body */
+.body {
+    max-width: 1200px;
+    min-height: 100vh;
+
+}
+
+/* el header */
+.header {
+    min-height: 70rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+    background-image: url(assets/hero.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* logo del header */
+.header__logo {
+    padding: 30px;
+    grid-column: 1/1;
+    grid-row: 1/2;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* todo el navegador del header */
+.header__nav {
+    grid-column: 1/1;
+    grid-row: 2/3;
+
+    justify-content: center;
+}
+
+/* el contenedor de los links del header */
+.container__nav {
+
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* los links del header */
+.nav__link {
+    color: var(--color-blanco);
+    font-style: none;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'RalewayBold';
+    font-size: var(--font-size-h3);
+    text-decoration: none;
+
+}
+
+/* cuando pasas el raton por encima del hover */
+.nav__link:hover {
+    color: var(--color-hoverBarra);
+    font-style: none;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'RalewayBold';
+    font-size: var(--font-size-h3);
+    text-decoration: none;
+}
+
+/* el mensaje del headers */
+
+.header__mensaje {
+    color: var(--color-blanco);
+    font-size: var(--font-size-h1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'RalewayBold';
+    text-align: center;
+    margin-bottom: 2rem;
+
+
+    grid-column: 1/1;
+    grid-row: 3/4;
+
+
+}
+
+/* display del main */
+.main__display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+/* imagenes del main */
+.main__titulo_img {
+    align-self: center;
+    max-height: 30rem;
+    max-width: 80%;
+}
+
+/* imagenes del centro de los postres */
+.main__titulo_img-centro {
+    align-self: center;
+    justify-self: center;
+    max-height: 20rem;
+    max-width: 80%;
+}
+
+
+/* titulo de main */
+.main__titulo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.main__titulo_1 {
+    color: var(--color-cafeClaro);
+    text-align: center;
+    font-size: var(--font-size-h3);
+}
+
+.main__titulo_2 {
+    color: var(--color-cafeOscuro);
+    text-align: center;
+    font-size: var(--font-size-h2);
+}
+
+.main__texto {
+    max-width: 80%;
+    text-align: center;
+}
+
+/* texto de debajo de los postres */
+.main__postres_nombres {
+    color: var(--color-cafeOscuro);
+    text-align: center;
+    font-size: var(--font-size-p);
+    padding: 10px;
+}
+
+
+/*contenedor de la galeria de imagenes */
+.main__galeria_imagenes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+/* las imagenes */
+.main__img {
+    max-height: fit-content;
+    max-width: 70%;
+
+    gap: 1rem;
+    grid-auto-flow: row;
+
+}
+
+
+/* tarjeta del final */
+.main__tarjeta_contenedor {}
+
+.main__tarjeta {
+    height: 250px;
+    width: 90%;
+    border: 2px var(--color-blanco);
+    border-radius: 10px;
+    background-color: var(--color-cafeClaro);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+
+
+
+}
+
+
+/* footer */
+
+.footer__informacion {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+/* el contenedor de la informacion del footer */
+.footer__contenedor {
+    margin: 1rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer__titulos {
+    color: var(--color-hoverBarra);
+    font-size: var(--font-size-h3);
+}
+
+.footer__textos {
+    color: var(--color-negro);
+    font-size: var(--font-size-p);
+    font-family: 'Roboto';
+
+}
+
+/* final de la pagina */
+.footer__derechos {
+    border: 2px var(--color-blanco);
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-cafeOscuro);
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+/* texto del final */
+.footer__final {
+    font-size: var(--font-size-p);
+    color: var(--color-blanco);
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+
+
+
+/* media querie para desktop */
+@media screen and (max-width: 768px) {
+
+    .header {
+        min-height: 70rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 3, 1fr;
+        grid-template-rows: repeat(3, 1fr);
+
+
+        background-image: url(assets/hero.jpg);
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+
+    /* logo del header */
+    .header__logo {
+        padding: 30px;
+        grid-column: 1/1;
+        grid-row: 1/2;
+
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    /* todo el navegador del header */
+    .header__nav {
+        grid-column: 1/1;
+        grid-row: 2/3;
+
+        justify-content: center;
+    }
+
+    /* el contenedor de los links del header */
+    .container__nav {
+
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* los links del header */
+    .nav__link {
+        color: var(--color-blanco);
+        font-style: none;
+        display: flex;
+        justify-content: center;
+
+        font-family: 'RalewayBold';
+        font-size: var(--font-size-h3);
+        text-decoration: none;
+
+    }
+
+    .header__mensaje {
+        color: var(--color-blanco);
+        font-size: var(--font-size-h1);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-family: 'RalewayBold';
+        text-align: center;
+        margin-bottom: 2rem;
+
+
+        grid-column: 1/1;
+        grid-row: 3/4;
+
+
+    }
+
+    .header__mensaje {
+        color: var(--color-blanco);
+        font-size: var(--font-size-h1);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-family: 'RalewayBold';
+        text-align: center;
+        margin-bottom: 2rem;
+
+
+        grid-column: 1/1;
+        grid-row: 3/4;
+
+
+    }
+}

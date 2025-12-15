@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio imagenes responsive</title>
+</head>
+
+<body>
+    <div class="contenedor__imagenes">
+        <!-- Segun DPR de la patnalla -->
+        <img srcset="img/turtle-1500.jpg 1500w,
+        img/turtle-1000.jpg 1000w,
+        img/turtle-500.jpg 500w" 
+        sizes="(max-width: 500px) 400px, (max-width: 800px, 1200px)" 
+        src="img/turtle-1500.jpg"
+            alt="tortuga">
+
+    </div>
+</body>
+
+</html>
