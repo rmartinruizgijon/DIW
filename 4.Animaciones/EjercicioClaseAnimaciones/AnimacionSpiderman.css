@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.bannerImagen {
+    width: 90%;
+    height: 600px;
+    margin: 80px auto;
+    background-color: crimson;
+    overflow: hidden;
+
+
+}
+
+.spidy {
+    height: 550px;
+    transform: translate()
+}
