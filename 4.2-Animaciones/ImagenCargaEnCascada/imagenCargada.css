@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture__img {
+    max-height: 90vh;
+    object-fit: cover;
+    clip-path: inset(0 0 100% 0);
+    animation: revelar 2s ease-out forwards;
+}
+
+@keyframes revelar {
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
