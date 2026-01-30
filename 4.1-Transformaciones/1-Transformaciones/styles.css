@@ -1,0 +1,86 @@
+/* Estilos base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    margin: 24px;
+}
+
+h1 {
+    margin: 0 0 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.demo {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.demo h2 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+/* La caja */
+.box {
+    width: var(--size);
+    height: var(--size);
+    background: #2d6cdf;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+/* 1) translate(x,y): mueve sin salir del flujo HTML */
+.t-translate {
+    transform: translate(30px, 10px);
+}
+
+/* 2) rotate(): gira (en grados, por ejemplo) */
+.t-rotate {
+    transform: rotate(20deg);
+}
+
+/* 3) scaleX(): escala horizontal */
+.t-scaleX {
+    transform: scaleX(1.5);
+}
+
+/* 4) scaleY(): escala vertical */
+.t-scaleY {
+    transform: scaleY(1.5);
+}
+
+/* 5) scale(x,y) o scale(n): escala general */
+.t-scale {
+    transform: scale(1.25);
+}
+
+/* 6) skewX(): sesga en X */
+.t-skewX {
+    transform: skewX(18deg);
+}
+
+/* 7) skewY(): sesga en Y */
+.t-skewY {
+    transform: skewY(18deg);
+}
+
+/* 8) skew(ax, ay): sesga en X e Y */
+.t-skew {
+    transform: skew(15deg, -10deg);
+}

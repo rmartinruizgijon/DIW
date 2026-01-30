@@ -1,0 +1,77 @@
+/* Estilos base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+body{
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 40px 24px;
+  background: #ffffff;
+  color: #111;
+}
+
+/* --- 1) Barra de navegación --- */
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.nav__link{
+  display: inline-block;            /* Importante: si fuera inline, puede dar problemas al animar */
+  min-width: 120px;
+  text-align: center;
+
+  padding: 10px 18px;
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+
+  /* Transición: cambio gradual entre estado base y :hover (trigger) */
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.nav__link:hover{
+  background: #fff;
+  color: #111;
+}
+
+/* --- 2) Botón premium --- */
+.cta{
+  display: grid;
+  place-items: center;
+}
+
+.btn-premium{
+  border: 0;
+  cursor: pointer;
+  padding: 14px 34px;
+  border-radius: 999px;
+
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .5px;
+
+  background: linear-gradient(90deg, #7a5cff, #38c6ff);
+
+  /* Elevación y “click”: usamos transform, que es de lo más recomendable para animar */
+  transform: translateY(0);
+
+  /* Transición suave al hover/active */
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.btn-premium:hover{
+  transform: translateY(-6px);      /* Se eleva */
+  filter: brightness(1.05);
+}
+
+.btn-premium:active{
+  transform: translateY(-1px);      /* “Presionado”: baja respecto al hover */
+}
