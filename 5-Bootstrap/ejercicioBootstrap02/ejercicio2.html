@@ -1,54 +1,209 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Ejercicio 2 bootstrap</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>Ejercicio 2 BS5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <!-- contenedor principal -->
-        <div class="container">
-            <!-- HEADER -->
-            <header class="row justify-content-center m-3">
-                <div class="col-4 col-md-3 col-lg-2">
-                    <img class="img-fluid" src="img/cars_logo.png" alt="logo de cars">
-                </div>
-            </header>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+   CDN iconos -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
 
-            <!-- MENÚ -->
-            <div class="row">
-                <div class="col-12">
-                    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+</head>
 
-                </div>
+<body>
+    <!-- contenedor principal -->
+    <div class="container-md">
+        <!-- HEADER -->
+        <header class="row justify-content-center m-3">
+            <div class="col-4 col-md-3 col-lg-2">
+                <img class="img-fluid" src="img/cars_logo.png" alt="logo de cars">
+            </div>
+        </header>
+
+        <!-- MENÚ -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-danger navbar-drak">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">VintageCars</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Coches</a>
+                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#">Tienda</a>
+                            </div>
+                        </div>
+                </nav>
 
             </div>
-
-
-            <!-- MULTIMEDIA -->
-
-            <!-- ANUNCIOS -->
-
-
-
-
 
         </div>
 
 
+        <!-- MULTIMEDIA -->
+
+        <!-- <section class="row row-cols-1 row-cols-2-md-2 mt-3"> -->
+        <section class="row mt-3">
+            <!-- columna 1 (vídeo) -->
+            <div class="col-md-6">
+                <div class="ratio ratio-4x3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=8ZMklX5BzTo"></iframe>
+                </div>
+            </div>
+            <!-- columna 2 (vídeo) -->
+            <div class="col-md-6">
+
+                <!-- fila 1 columna 2 -->
+                <!-- <div class="row row-cols-1 row-cols-sm-2"> -->
+                <div class="row">
+                    <!-- foto 1 -->
+                    <div class="col-sm-6">
+                        <figure class="figure">
+                            <img src="img/img1.jpg" class="figure-img img-fluid rounded" alt="mini rojo">
+                            <figcaption class="figure-caption">Mini Cooper 1965</figcaption>
+                        </figure>
+                    </div>
+                    <!-- foto 2 -->
+                    <div class="col-sm-6">
+                        <figure class="figure">
+                            <img src="img/img2.jpg" class="figure-img img-fluid rounded" alt="peugot azul">
+                            <figcaption class="figure-caption">Peugot 403 1968 </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+                <!-- fila 2 columna 2 -->
+                <div class="row">
+                    <!-- foto 3 -->
+                    <div class="col-sm-6">
+                        <figure class="figure">
+                            <img src="img/img3.jpg" class="figure-img img-fluid rounded" alt="vespa">
+                            <figcaption class="figure-caption">Vespa 1972</figcaption>
+                        </figure>
+                    </div>
+                    <!-- foto 4 -->
+                    <div class="col-sm-6">
+                        <figure class="figure">
+                            <img src="img/img4.jpg" class="figure-img img-fluid rounded" alt="motocicleta">
+                            <figcaption class="figure-caption">Motocicleta 200cc</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+        </section>
+
+
+
+
+        <!-- ANUNCIOS -->
+
+        <!-- titular -->
+        <h1 class="display-5 text-center bg-danger text-white text-uppercase">Anuncios</h1>
+        <!-- cards -->
+        <main class="row justify-content-center">
+            <div class="col-11">
+                <!-- fila con tres cards -->
+                <div class="row row-cols-1 row-cols-md-3 bg-body-secondary text-center">
+                    <!-- card 1 -->
+                    <div class="col">
+                        <h3>EN VENTA</h3>
+                        <img src="img/anuncio1.jpg" class="img-fluid" alt="furgoneta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor iusto ducimus
+                            atque suscipit tenetur, quaerat maiores. Quibusdam, excepturi! Atque.</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col">
+                        <h3>EN VENTA</h3>
+                        <img src="img/anuncio1.jpg" class="img-fluid" alt="furgoneta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor iusto ducimus
+                            atque suscipit tenetur, quaerat maiores. Quibusdam, excepturi! Atque.</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col">
+                        <h3>EN VENTA</h3>
+                        <img src="img/anuncio1.jpg" class="img-fluid" alt="furgoneta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor iusto ducimus
+                            atque suscipit tenetur, quaerat maiores. Quibusdam, excepturi! Atque.</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+        <!-- CONTACTOS   -->
+        <!-- titular -->
+        <h1 class="display-5 text-center bg-danger text-white text-uppercase">Contacto</h1>
+
+        <section class="row justify-content-center p-4 gap-md-3">
+            <!-- formulario de contacto -->
+            <div class="col-sm-6 col-md-4">
+                <form action="#">
+                    <label for="nombre" class="form-label">Nombre y Apellidos: </label>
+                    <input type="text" id="nombre" name="input-nombre" class="form-control" required>
+
+                    <label for="correo" class="form-label">Correo: </label>
+                    <input type="text" id="correo" name="input-correo" class="form-control" required>
+
+                    <label for="consulta" class="form-label">Consulta: </label>
+                    <textarea id="consulta" name="textarea-consulta" class="form-control" required></textarea>
+
+                    <div class="mt-3 text-end">
+                        <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- contacta con nosotros -->
+            <div class="col-sm-6 col-md-4 mt-4 mt-sm-0">
+                <h3 class="bg-dark text-light text-center p-2 rounded">Contacta con nosotros</h3>
+                <p>Estaremos encantados de ayudarte</p>
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="bg-danger text-light mt-2">
+            <!-- fila footer 1 -->
+            <div class="row py-1">
+                <!-- <div class="col"> -->
+                <p class="col text-center">Copyright 2026</p>
+            </div>
+
+
+
+            <!-- fila footer 2 -->
+            <div class="row justify-content-center py-1 text-center fs-3">
+
+                <div class="col-2 col-md-1"><a href="#" class="text-light"><i class="bi bi-facebook"></i></a></div>
+                <div class="col-2 col-md-1"><a href="#" class="text-light"><i class="bi bi-twitter"></i></a></div>
+                <div class="col-2 col-md-1"><a href="#" class="text-light"><i class="bi bi-instagram"></i></a></div>
+
+            </div>
+
+        </footer>
+
+    </div>
 
 
 
@@ -59,17 +214,16 @@
 
 
 
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
