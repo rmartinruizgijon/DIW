@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+:root {
+    --bs-blue: #037bc0;
+    --bs-green: #8cbc00;
+    --green-hover: #769c02;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem == 16px */
+}
+
+
+body {
+    font-family: 'Raleway';
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair';
+}
+
+/* Tamaño textos */
+h1 {
+    font-size: 3.8rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+/* Reescribimos los colores */
+.text-primary {
+    color: var(--bs-blue) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-blue) !important;
+}
+
+.btn.success {
+    background-color: var(--bs-green) !important;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
