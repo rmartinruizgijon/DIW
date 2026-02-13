@@ -58,6 +58,38 @@ h1 {
     background-color: var(--bs-green) !important;
 }
 
+/* imagen hero */
+.hero {
+    background-image: url('../img/categoria1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 25rem;
+}
+
+/* transiciones */
+
+.zoom {
+    transition: transform 0.4s;
+
+
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+
+}
+
+.btn-hover {
+    transition: background-color 0.3s;
+}
+
+.btn-hover:hover {
+    background-color: var(--green-hover) !important;
+}
+
+
+
+/* media querie */
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 5rem;
@@ -69,5 +101,9 @@ h1 {
 
     h1 {
         font-size: 3rem;
+    }
+
+    .hero {
+        height: 55rem;
     }
 }
