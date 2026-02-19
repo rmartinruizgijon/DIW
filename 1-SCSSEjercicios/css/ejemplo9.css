@@ -1,0 +1,25 @@
+.header {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  background-color: darkolivegreen;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: darkcyan;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  background-color: palevioletred;
+}
+
+/*# sourceMappingURL=ejemplo9.css.map */

@@ -1,0 +1,28 @@
+//mixin para crear grid
+
+@mixin crear-grid($rows, $columns, $gap: 20px) {
+  display: grid;
+  grid-template-rows: repeat($rows, 1fr);
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// EJemplo de ultilizacion del mixin
+.header {
+  @include crear-grid(4, 5);
+  background-color: darkolivegreen;
+}
+
+.main {
+  @include crear-grid(2, 4, 10px);
+  background-color: darkcyan;
+}
+
+$filas: 2;
+$columnas: 6;
+$gutter: 30px;
+
+.footer {
+  @include crear-grid($filas, $columnas, $gutter);
+  background-color: palevioletred;
+}

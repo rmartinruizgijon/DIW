@@ -1,0 +1,21 @@
+.btn, .btn-warning, .btn-error, .btn-success {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-success {
+  border-color: green;
+}
+
+.btn-error {
+  border-color: red;
+}
+
+.btn-warning {
+  border-color: yellows;
+}
+
+/*# sourceMappingURL=ejemplo12.css.map */

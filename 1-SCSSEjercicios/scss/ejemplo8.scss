@@ -1,0 +1,9 @@
+@for $i from 0 through 9 {
+  //interpolamos el valor del contador
+  .color#{$i} {
+    // background-color: string.unquote("#" + "#{$i}" + "00000");
+    background-color: string.unquote('##{$i}00000');
+    //string.unquote quita las comillas 
+    color: white;
+  }
+}
