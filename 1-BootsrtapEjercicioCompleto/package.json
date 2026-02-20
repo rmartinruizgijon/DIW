@@ -1,0 +1,23 @@
+{
+  "name": "1-bootsrtapejerciciocompleto",
+  "version": "1.0.0",
+  "description": "Proyecto basado en BS5 y Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilar:sass": "sass --watch src/sass:build/css"
+  },
+  "keywords": [
+    "Boostrap",
+    "5",
+    "Sass",
+    "Meeti"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3"
+  }
+}

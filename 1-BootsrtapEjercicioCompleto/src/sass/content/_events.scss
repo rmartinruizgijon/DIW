@@ -1,0 +1,16 @@
+.eventos {
+  .card {
+    //queremos hacer clic en cualquire parte de la card
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      border-radius: 0.5rem;
+    }
+
+    .fecha {
+      color: #877457;
+    }
+  }
+}
